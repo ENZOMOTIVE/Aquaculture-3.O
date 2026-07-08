@@ -1,43 +1,26 @@
 # Aquaculture 3.O
 
-## Project Tags
+> Aquaculture 3.O is a full-stack project with a visible product surface and supporting service layer.
 
-- `Full Stack`
-- `Protocol`
+## The Story
 
-## Overview
+Aquaculture 3.O starts with a simple goal: keep the product experience and the service layer visible in one place. Its shape tells the same story: the product interface and the service layer live close enough together that a maintainer can see the project as a whole before diving into individual folders.
 
-Aquaculture 3.O is a full-stack application with separate frontend and backend pieces.
+## What It Includes
 
-## Features
+- A user-facing surface for the product, demo, dashboard, or static experience.
+- A service layer for APIs, realtime behavior, bot logic, or server-side workflows.
 
-- User-facing frontend or app interface
-- Backend service, API, websocket, bot, or server workflow
+## How It Is Put Together
 
-## Tech Stack
+| Path | Role |
+| --- | --- |
+| `.gitattributes` | project file or folder |
+| `admin-interface` | frontend or dashboard application |
+| `server` | service, bot, API, or realtime layer |
+| `user-interface` | frontend or dashboard application |
 
-- React
-- Express
-- Node.js
-- JavaScript
-- HTML
-- CSS
-
-## Project Structure
-
-- `.gitattributes` - project file or directory
-- `admin-interface` - frontend application code
-- `server` - backend, API, bot, or server code
-- `user-interface` - frontend application code
-
-## Getting Started
-
-### Prerequisites
-
-- Git
-- Node.js 18+
-
-### Setup and Run
+## Local Development
 
 ```bash
 git clone https://github.com/ENZOMOTIVE/Aquaculture-3.O.git
@@ -61,17 +44,20 @@ npm install
 npm start
 ```
 
-## Commands
+## Command Surface
 
-- `admin-interface/package.json`: `start`, `build`, `test`, `eject`
-- `server/package.json`: `test`
-- `user-interface/package.json`: `start`, `build`, `test`, `eject`
+| Area | Commands |
+| --- | --- |
+| `admin-interface/package.json` | `start`, `build`, `test`, `eject` |
+| `server/package.json` | `test` |
+| `user-interface/package.json` | `start`, `build`, `test`, `eject` |
 
 ## Configuration
 
-- Document required service ports, database URLs, and API credentials before deployment.
+- Document API ports, database URLs, third-party credentials, and service endpoints in `.env.example` before deployment.
+- Keep wallet private keys, RPC URLs, mnemonics, and contract secrets outside version control.
 
-## Testing and Quality
+## Quality Checks
 
 - From `admin-interface`, run `npm test`.
 - From `admin-interface`, run `npm run build`.
@@ -79,17 +65,21 @@ npm start
 - From `user-interface`, run `npm test`.
 - From `user-interface`, run `npm run build`.
 
-## Documentation Notes
+## Where To Take It Next
 
-- Keep this README aligned with the actual source layout and commands.
-- Add screenshots, API examples, contract addresses, or deployment links when they become stable.
-- Update the project tags when the scope changes.
+- Add screenshots or a short user flow so visitors can see the interface before running it.
+- Document the main API routes, bot events, or service responsibilities with example inputs and outputs.
+- Keep setup commands current whenever dependencies, scripts, or deployment targets change.
+- Record important product decisions here so the repository keeps its story as the code evolves.
 
-## Contributing
+## Project Metadata
 
-1. Create a focused branch for the change.
-2. Update code and documentation together.
-3. Run the relevant checks before opening a pull request.
+| Field | Details |
+| --- | --- |
+| Repository | `ENZOMOTIVE/Aquaculture-3.O` |
+| Categories | `Full Stack`, `Protocol` |
+| Primary stack | React, Express, Node.js, JavaScript, HTML, CSS |
+
 
 ## License
 
