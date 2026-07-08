@@ -1,21 +1,96 @@
+# Aquaculture 3.O
 
-# Aquaculture 3.O: Revolutionizing Aquafarming through Blockchain and Sustainability
+## Project Tags
 
-## Introduction
+- `Full Stack`
+- `Protocol`
 
-Aquaculture 3.O is a revolutionary project that aims to transform the way aquafarming is managed. Our health depends on what we eat. In this project, IoT devices are installed in ponds where fishes are farmed. These IoT devices continuously send data to a hotspot device, which periodically transmits this data to a server. The server validates the data against admin criteria, producing a result that indicates the water quality based on these criteria. Healthy aquatic organisms thrive in good conditions, ensuring their optimal growth and health. The validated data's metadata is uploaded to the blockchain, while the actual data is stored in the cloud.
+## Overview
 
+Aquaculture 3.O is a full-stack application with separate frontend and backend pieces.
 
+## Features
 
-## Key Features
+- User-facing frontend or app interface
+- Backend service, API, websocket, bot, or server workflow
 
-- **Data Validation:** Server side validation of data against pre defined admin criteria to assess the water quality and ensure the optimal conditions for aquafarming.
-  
-- **Blockchain Integration :** Secure and transparent storage of validated data providing an immutable record of water quality assessments.
-  
-- **Health Optimization:** Creating a transparent where People buying aquatic products from a company can check the condition in which their food is grown.
-  
-- **Scalability:** Designed to support large-scale aquafarming operations, allowing for the integration of multiple ponds and IoT devices.
+## Tech Stack
 
+- React
+- Express
+- Node.js
+- JavaScript
+- HTML
+- CSS
 
+## Project Structure
 
+- `.gitattributes` - project file or directory
+- `admin-interface` - frontend application code
+- `server` - backend, API, bot, or server code
+- `user-interface` - frontend application code
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Node.js 18+
+
+### Setup and Run
+
+```bash
+git clone https://github.com/ENZOMOTIVE/Aquaculture-3.O.git
+cd Aquaculture-3.O
+```
+
+```bash
+cd admin-interface
+npm install
+npm start
+```
+
+```bash
+cd server
+npm install
+```
+
+```bash
+cd user-interface
+npm install
+npm start
+```
+
+## Commands
+
+- `admin-interface/package.json`: `start`, `build`, `test`, `eject`
+- `server/package.json`: `test`
+- `user-interface/package.json`: `start`, `build`, `test`, `eject`
+
+## Configuration
+
+- Document required service ports, database URLs, and API credentials before deployment.
+
+## Testing and Quality
+
+- From `admin-interface`, run `npm test`.
+- From `admin-interface`, run `npm run build`.
+- From `server`, run `npm test`.
+- From `user-interface`, run `npm test`.
+- From `user-interface`, run `npm run build`.
+
+## Documentation Notes
+
+- Keep this README aligned with the actual source layout and commands.
+- Add screenshots, API examples, contract addresses, or deployment links when they become stable.
+- Update the project tags when the scope changes.
+
+## Contributing
+
+1. Create a focused branch for the change.
+2. Update code and documentation together.
+3. Run the relevant checks before opening a pull request.
+
+## License
+
+No license file is currently committed. Add one before distributing this project publicly.
